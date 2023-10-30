@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="forms">
+      <div class="tittle">
+        <h1>Forms</h1>
+        <p>descrição</p>
+        <hr>
+      </div>
+      <div>
+        <form class="option">
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Fulano"
+            required
+          />
+
+          <label for="idade">Idade:</label>
+          <input
+            type="number"
+            name="idade"
+            id="idade"
+            placeholder="18"
+            min="12"
+            max="100"
+            required
+          />
+
+          <label for="adms">Congregação:</label>
+          <input
+            type="text"
+            name="adms"
+            id="adms"
+            placeholder="adms nome da igreja"
+            required
+          />
+
+          <label for="conjunto">Conjunto:</label>
+          <select required name="conjunto" id="conju">
+            <option disabled selected value="0">Conjunto:</option>
+            <option value="0">Adolescentes</option>
+            <option value="0">Jovens</option>
+            <option value="0">Novos Convertidos</option>
+            <option value="0">Irmãs</option>
+          </select>
+
+          <label for="Valor">Contribuição:</label>
+          <select required name="valor" id="valor">
+            <option disabled selected value="0">valor</option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="50"></option>
+            <option value="100"></option>
+          </select>
+
+          <label for="personalizado">Valor personalizado:</label>
+          <input
+            type="number"
+            name="valorP"
+            id="valorP"
+            placeholder="R$155,00"
+          />
+        </form>
+      </div>
+      <div class="button">
+        <button>enviar</button></div>
+    </div>
+  </body>
+</html>
